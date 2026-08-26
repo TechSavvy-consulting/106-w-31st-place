@@ -184,24 +184,10 @@ h3 { font-size: 1.13rem; }
 
 .section { padding: 112px 0; scroll-margin-top: 70px; }
 .about-section { background: var(--paper); }
-.about-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: clamp(48px, 7vw, 100px); align-items: center; }
+.about-copy { max-width: 820px; }
 .lead { font-size: 1.18rem; color: var(--ink); }
 .about-copy p:not(.eyebrow) { max-width: 700px; }
 .about-copy p { color: var(--ink-soft); }
-.source-note { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.76rem; }
-.feature-photo { position: relative; margin: 0; }
-.feature-photo::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: -24px;
-  bottom: 42px;
-  width: 72%;
-  height: 72%;
-  background: var(--sand);
-}
-.feature-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; box-shadow: var(--shadow); }
-.feature-photo figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 0.78rem; }
 
 .features-section { background: var(--cream); }
 .section-heading-row { display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 48px; align-items: end; margin-bottom: 52px; }
@@ -326,8 +312,7 @@ h3 { font-size: 1.13rem; }
   .fact-ribbon { right: 16px; grid-template-columns: repeat(2, 1fr); width: calc(100% - 32px); }
   .fact-ribbon div:nth-child(2) { border-right: 0; }
   .fact-ribbon div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .about-grid, .location-grid { grid-template-columns: 1fr; }
-  .feature-photo { width: min(100%, 560px); justify-self: end; }
+  .location-grid { grid-template-columns: 1fr; }
   .section-heading-row { grid-template-columns: 1fr; gap: 18px; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-item, .gallery-item:nth-child(1), .gallery-item:nth-child(17), .gallery-item:nth-child(2), .gallery-item:nth-child(16), .gallery-item:nth-child(21) { grid-column: span 6; }
@@ -349,7 +334,6 @@ h3 { font-size: 1.13rem; }
   .fact-ribbon div { padding: 15px 17px; }
   .fact-ribbon strong { font-size: 1.35rem; }
   .section { padding: 80px 0; }
-  .feature-photo::before { right: -10px; }
   .feature-grid { grid-template-columns: 1fr; }
   .feature-card { min-height: auto; }
   .feature-number { margin-bottom: 24px; }
@@ -374,3 +358,4 @@ h3 { font-size: 1.13rem; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
