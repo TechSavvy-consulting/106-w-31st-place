@@ -145,6 +145,7 @@ h2 { margin-bottom: 24px; font-size: clamp(2.25rem, 4.8vw, 4.3rem); }
 h3 { font-size: 1.13rem; }
 .hero-intro { margin: 0 0 34px; font-size: clamp(1.05rem, 2vw, 1.28rem); color: rgba(255, 255, 255, 0.88); }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-action-break { flex: 0 0 100%; }
 .button {
   display: inline-flex;
   align-items: center;
