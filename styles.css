@@ -332,7 +332,8 @@ h3 { font-size: 1.13rem; }
   .hero-image { object-position: 58% center; }
   .hero-shade { background: linear-gradient(to top, rgba(13, 22, 16, 0.88) 0%, rgba(15, 24, 18, 0.5) 60%, rgba(15, 24, 18, 0.2) 100%); }
   .hero-content { align-self: end; padding: 120px 0 240px; }
-  .hero-actions .button { width: 100%; }
+  .hero-actions .button, .hero-action-break { width: 100%; }
+  .hero-action-break { display: flex; }
   .fact-ribbon { right: 14px; width: calc(100% - 28px); }
   .fact-ribbon div { padding: 15px 17px; }
   .fact-ribbon strong { font-size: 1.35rem; }
