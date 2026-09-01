@@ -7,7 +7,7 @@ const photos = [
   ["06_Dining_Kitchen_Overview.jpg", "Dining and kitchen", "Dining area opening into the bright white kitchen."],
   ["07_Kitchen.jpg", "Kitchen", "White cabinetry, stone counters, and stainless-look appliances."],
   ["08_Kitchen_Second_View.jpg", "Kitchen, second view", "A second kitchen view showing the cabinet storage and appliance layout."],
-  ["09_Dining_Back_Doors.jpg", "Dining area", "Dining space with French doors opening to the backyard."],
+  ["09_Dining_Back_Doors.jpg", "Dining area", "Dining space with the rear entry overlooking the backyard."],
   ["10_Primary_Bedroom.jpg", "Primary bedroom", "Primary bedroom with wood flooring, ceiling fan, horizontal window, and private bath."],
   ["11_Primary_Bedroom_Reverse.jpg", "Primary bedroom, reverse view", "A second primary-bedroom view showing the closet and hall entry."],
   ["12_Primary_Bath_Shower.jpg", "Primary bath shower", "Primary bath with a tiled walk-in shower."],
@@ -25,7 +25,7 @@ const photos = [
   ["24_Backyard_Rear_Hero.jpg", "Backyard and rear exterior", "Rear exterior overlooking the fenced backyard and mature shade tree."],
   ["25_Backyard_Patio_Tree.jpg", "Backyard patio and tree", "Patio area beside a mature backyard shade tree."],
   ["26_Backyard_Open_Lawn.jpg", "Open backyard", "Broad, fenced lawn with room for outdoor activities."],
-  ["27_Rear_Exterior_Angle.jpg", "Rear exterior", "Rear exterior with French doors opening to the patio."],
+  ["27_Rear_Exterior_Angle.jpg", "Rear exterior", "Rear exterior with the back entry opening to the patio."],
   ["28_Storage_Shed.jpg", "Storage shed", "Backyard shed providing useful outdoor storage."],
 ];
 
