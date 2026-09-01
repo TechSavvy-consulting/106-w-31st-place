@@ -34,7 +34,7 @@ const lightbox = document.querySelector("[data-lightbox]");
 const lightboxImage = document.querySelector("[data-lightbox-image]");
 const lightboxCaption = document.querySelector("[data-lightbox-caption]");
 const lightboxCount = document.querySelector("[data-lightbox-count]");
-const showcaseIndexes = [2, 6, 9, 23];
+const showcaseIndexes = [0, 2, 6, 9, 23];
 let activeIndex = 0;
 
 showcaseIndexes.forEach((index) => {
