@@ -231,6 +231,7 @@ h3 { font-size: 1.13rem; }
 .location-section { color: white; background: var(--forest); }
 .location-grid { display: grid; grid-template-columns: 1fr 0.9fr; gap: clamp(50px, 8vw, 110px); align-items: center; }
 .location-lead { max-width: 650px; margin: 0 0 34px; color: rgba(255, 255, 255, 0.76); font-size: 1.05rem; }
+.location-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .school-panel { padding: 38px; color: var(--ink); background: var(--cream); box-shadow: 18px 18px 0 rgba(255, 255, 255, 0.06); }
 .panel-label { margin: 0 0 24px; color: var(--clay); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; }
 .school-panel article { padding: 20px 0; border-top: 1px solid var(--line); }
@@ -342,6 +343,7 @@ h3 { font-size: 1.13rem; }
   .gallery-item, .gallery-item:nth-child(1), .gallery-item:nth-child(17), .gallery-item:nth-child(2), .gallery-item:nth-child(16), .gallery-item:nth-child(21) { grid-column: span 12; }
   .gallery-heading { grid-template-columns: 1fr; }
   .gallery-count { width: fit-content; }
+  .location-actions .button { width: 100%; }
   .school-panel { padding: 28px 22px; }
   .inquiry-form { grid-template-columns: 1fr; }
   .form-field:nth-of-type(4) { grid-column: auto; }
