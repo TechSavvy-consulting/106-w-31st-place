@@ -65,16 +65,14 @@
             an attached garage, and a generous fenced backyard.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#gallery">Explore all 28 photos</a>
+            <a class="button button-primary" href="#gallery" data-open-slideshow>Explore all 28 photos</a>
             <a class="button button-ghost" href="#location">View location &amp; sales details</a>
-            <div class="hero-action-break">
-              <a
-                class="button button-ghost"
-                href="https://www.zillow.com/homedetails/106-W-31st-Pl-S-Sand-Springs-OK-74063/22215594_zpid/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >View the Zillow listing</a>
-            </div>
+            <a
+              class="button button-ghost"
+              href="https://www.zillow.com/homedetails/106-W-31st-Pl-S-Sand-Springs-OK-74063/22215594_zpid/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View the Zillow listing</a>
           </div>
         </div>
         <div class="fact-ribbon" aria-label="Property overview">
@@ -143,11 +141,44 @@
           <div class="section-heading-row gallery-heading">
             <div>
               <h2 id="gallery-title">See the whole home.</h2>
-              <p>Tour the exterior, living spaces, bedrooms, baths, garage, and backyard.</p>
+              <p>Tour the exterior, living spaces, bedrooms, baths, garage, and backyard in one simple slideshow.</p>
             </div>
             <span class="gallery-count">28 photographs</span>
           </div>
-          <p class="gallery-instruction">Select any photo to view the full-size slideshow.</p>
+          <button
+            class="slideshow-launcher"
+            type="button"
+            data-open-slideshow
+            aria-label="Open the full 28-photo property slideshow"
+          >
+            <span class="slideshow-mosaic" aria-hidden="true">
+              <img src="03_Living_Room.jpg" alt="" width="1600" height="1200" loading="lazy" />
+              <img src="07_Kitchen.jpg" alt="" width="1600" height="1200" loading="lazy" />
+              <img src="24_Backyard_Rear_Hero.jpg" alt="" width="1600" height="1200" loading="lazy" />
+            </span>
+            <span class="slideshow-launcher-content">
+              <span class="slideshow-kicker">Full property tour</span>
+              <span class="slideshow-title">
+                <span class="slideshow-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M8.5 5.5v13l10-6.5-10-6.5Z" fill="currentColor" />
+                  </svg>
+                </span>
+                <strong>Open the full 28-photo slideshow</strong>
+              </span>
+              <span class="slideshow-copy">Exterior · Living spaces · Bedrooms · Baths · Garage · Backyard</span>
+            </span>
+          </button>
+
+          <div class="showcase-header">
+            <div>
+              <h3>Four spaces to start with.</h3>
+              <p>Select any featured photo to open it full size and continue through the complete tour.</p>
+            </div>
+            <button class="showcase-link" type="button" data-open-slideshow>
+              View all 28 photos <span aria-hidden="true">→</span>
+            </button>
+          </div>
           <div class="gallery-grid" data-gallery aria-live="polite"></div>
           <noscript>
             <p class="noscript-note">JavaScript is required for the complete interactive photo gallery.</p>

@@ -34,9 +34,11 @@ const lightbox = document.querySelector("[data-lightbox]");
 const lightboxImage = document.querySelector("[data-lightbox-image]");
 const lightboxCaption = document.querySelector("[data-lightbox-caption]");
 const lightboxCount = document.querySelector("[data-lightbox-count]");
+const showcaseIndexes = [2, 6, 9, 23];
 let activeIndex = 0;
 
-photos.forEach(([file, label, description], index) => {
+showcaseIndexes.forEach((index) => {
+  const [file, label, description] = photos[index];
   const button = document.createElement("button");
   button.className = "gallery-item";
   button.type = "button";
@@ -68,6 +70,13 @@ function closePhoto() {
   lightbox.close();
   document.body.classList.remove("lightbox-open");
 }
+
+document.querySelectorAll("[data-open-slideshow]").forEach((launcher) => {
+  launcher.addEventListener("click", (event) => {
+    if (launcher.tagName === "A") event.preventDefault();
+    openPhoto(0);
+  });
+});
 
 document.querySelector("[data-lightbox-close]").addEventListener("click", closePhoto);
 document.querySelector("[data-lightbox-prev]").addEventListener("click", () => setPhoto(activeIndex - 1));
